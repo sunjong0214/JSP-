@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+}
+ 
+header {
+    height: 50px;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: x-large;
+}
+ 
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hotpink;
+    color: white;
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+}
+ 
+.emphasized {
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+}

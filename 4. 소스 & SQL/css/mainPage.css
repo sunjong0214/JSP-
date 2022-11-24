@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* body CSS태그 */ 
+body, html {
+/*   height: 100vh; */
+  width:100%;
+  background: black;
+} 
+  body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-family: 'Inter', sans-serif;
+	color:white;
+	/* width:200vh; */
+/* 	height:100vh; */
+	display: inline-block;
+   }
+   div.box {
+        flex: 1;
+
+    }
+
+   /* header CSS */
+   .header {
+  position: fixed; /* 위치 고정 */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  padding: 1rem;
+  color: white;
+  background: rgb(52, 58, 64);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between; /* 가로축-중심축 -> 요소들 사이 동일 간격 */
+  align-items: center; /* 세로축 기준 정렬 */
+  z-index: 3;
+}
+
+
+
+
+* {
+  box-sizing: border-box; /* 테두리 기준으로 크기 정함 */
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+
+       .height{
+        height: 100vh;
+       } 
+       .search{
+       position: relative;
+       box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+       
+       }
+
+       .search input{
+
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #1b1d24;
+  		background-color : #1b1d24;
+
+       }
+
+
+       .search input:focus{
+  		background-color : #1b1d24;
+        box-shadow: none;
+        border: 2px solid #1b1d24;
+
+
+       }
+
+       .search .fa-search{
+
+        position: absolute;
+        top: 20px;
+        left: 16px;
+		
+       }
+
+       .search button{
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: rgb(51,51,51);
+
+       }
+       
+       /* style CSS */
+       /* ul li 점 없애기 */
+       * {
+  list-style: none;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+/* Side Bar */
+.wrapper {
+  display: flex;
+  text-decoration: none;
+  transition: all 0.4s;
+  width:200px;
+}
+
+#sidebar {
+	margin-top:75px;
+  min-width: 250px;
+  max-width: 250px;
+  background: #262933;
+  color: #fff;
+  transition: all 0.4s;
+	height:93.5vh;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #1b1d24;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  /* border-bottom: 1px solid #47748b; */
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #262933;
+  background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #1b1d24;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #1b1d24;
+}
+
+.wrap {
+  /* width: 100%; */
+  display:inline-block;
+  padding: 20px;
+  transition: all 0.4s;
+  text-align: justify;
+  background: gray;
+  height:100vh;
+  width:100vh;
+}
+   
+div.wrap {
+    min-width: 1000px;
+    height: 100vh;
+    width:100%;
+    margin-left: 100px;
+    margin-top: 100px;
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  #sidebar.active {
+    margin-left: 0;
+  }
+
+  #sidebarCollapse span {
+    display: none;
+  }
+  .center.active{
+  	width:200vh;
+  }
+}
